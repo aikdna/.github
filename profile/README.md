@@ -13,7 +13,7 @@ Each `.kdna` work packages structured judgments—question, core claim, reasonin
 | Repository | Package / Releases | Role |
 | :--- | :--- | :--- |
 | [`aikdna/kdna`](https://github.com/aikdna/kdna) | `@aikdna/kdna-core@0.37.11` · `@aikdna/kdna-read@0.13.5` | Open Container `0.6.0` specification, schemas, conformance suites, Core admission/crypto SDK, and Selective Read SDK ([中文 README](https://github.com/aikdna/kdna/blob/main/README.zh.md)) |
-| [`aikdna/kdna-cli`](https://github.com/aikdna/kdna-cli) | `@aikdna/kdna-cli@0.45.2` | Official CLI (Node.js `>=22`, offline & account-free): `init`, `validate-input`, `create`, `protect`, `unprotect`, `inspect`, `validate`, `read`, `diff`, `source-open`, `source-pack`, `convert` |
+| [`aikdna/kdna-cli`](https://github.com/aikdna/kdna-cli) | `@aikdna/kdna-cli@0.46.0` | Official CLI (Node.js `>=22`, offline & account-free): `init`, `validate-input`, `create`, `review`, `protect`, `unprotect`, `inspect`, `validate`, `read`, `diff`, `source-open`, `source-pack`, `convert` |
 | [`aikdna/kdna-skills`](https://github.com/aikdna/kdna-skills) | `@aikdna/kdna-mcp-server@0.8.4` | Agent Skills (`kdna-creator`, `kdna-loader`) for Claude Code / Cursor / Codex / Antigravity and optional local stdio MCP adapter |
 | [`aikdna/kdna-assets`](https://github.com/aikdna/kdna-assets) | [GitHub Releases](https://github.com/aikdna/kdna-assets/releases) | Official public `.kdna` works: bilingual *KDNA Whitepaper* `v1.0.2` (`CC BY 4.0`, 45 judgments) plus bilingual `human-writing-system` `v1.0.1` and `code-review-system` `v1.0.2` (`Apache-2.0`, 22 judgments each) |
 | [`aikdna/kdna-reader-releases`](https://github.com/aikdna/kdna-reader-releases) | [`v0.3.4-build30`](https://github.com/aikdna/kdna-reader-releases/releases/tag/v0.3.4-build30) | Signed & Apple-notarized macOS Apple Silicon **KDNA Reader** binary releases and SHA-256 checksums (free offline built-in Whitepaper & local `.kdna`; optional free `KDNA ID` for multi-tab comparison) |
@@ -26,7 +26,7 @@ Each `.kdna` work packages structured judgments—question, core claim, reasonin
 # Download an official bilingual exemplar and browse its 22-judgment catalog
 curl -fsSLo kdna-code-review-system-1.0.2.en.kdna \
   https://aikdna.com/downloads/exemplars/v1/kdna-code-review-system-1.0.2.en.kdna
-npx -y @aikdna/kdna-cli@0.45.2 read kdna-code-review-system-1.0.2.en.kdna \
+npx -y @aikdna/kdna-cli@0.46.0 read kdna-code-review-system-1.0.2.en.kdna \
   --mode catalog --allow-read --format human
 ```
 
